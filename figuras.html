@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso Práctico JS Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+    
+    <p>Este es el primer taller del curso de js</p>
+
+    <section>
+        <h2>Calcular el área y perímetro de un cuadrado</h2>
+        <form action="">
+            <label for="inputSquare">Escribe cuanto mide cada lado de tu cuadrado: </label>
+            <input style="margin-bottom: 10px" id="inputSquare" type="number" required>
+            <p style="color: rgb(212, 85, 85);" id="warningSquare"></p>
+            <button type="button" onclick="calculatePerimeterSquare()">Calcular el perimetro</button>
+            <button type="button" onclick="calculateAreaSquare()">Calcular el area</button>
+            <p style="color: blue;" id="answerPerimeterSquare"></p>
+            <p style="color: blue;" id="answerAreaSquare"></p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcular el área y perímetro de un triangulo</h2>
+        <form action="">
+            <label for="inputBaseTriangle">Escribe cuanto mide la base de tu triangulo: </label>
+            <input style="margin-bottom: 5px" id="inputBaseTriangle" type="number">
+            <br>
+            <label for="inputFirstSideTriangle">Escribe cuanto mide un lado de tu triangulo: </label>
+            <input style="margin-bottom: 5px" id="inputFirstSideTriangle" type="number">
+            <br>
+            <label for="inputSecondSideTriangle">Escribe cuanto mide el otro lado de tu triangulo: </label>
+            <input style="margin-bottom: 5px" id="inputSecondSideTriangle" type="number">
+            <p style="color: rgb(212, 85, 85);" id="warningPerimeterTriangle"></p>
+            <label for="inputHeightTriangle">Escribe cuanto mide la altura de tu triangulo: </label>
+            <input style="margin-bottom: 10px" id="inputHeightTriangle" type="number">
+            <p style="color: rgb(212, 85, 85);" id="warningAreaTriangle"></p>
+            <button type="button" onclick="calculatePerimeterTriangle()">Calcular el perimetro</button>
+            <button type="button" onclick="calculateAreaTriangle()">Calcular el area</button>
+            <p style="color: blue;" id="answerPerimeterTriangle"></p>
+            <p style="color: blue;" id="answerAreaTriangle"></p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcular el área y perímetro de un circulo</h2>
+        <form action="">
+            <label for="inputRadioCircle">Escribe cuanto mide el radio de tu circulo: </label>
+            <input style="margin-bottom: 10px" id="inputRadioCircle" type="number" required>
+            <p style="color: rgb(212, 85, 85);" id="warningCircle"></p>
+            <button type="button" onclick="calculatePerimeterCircle()">Calcular el perimetro</button>
+            <button type="button" onclick="calculateAreaCircle()">Calcular el area</button>
+            <p style="color: blue;" id="answerPerimeterCircle"></p>
+            <p style="color: blue;" id="answerAreaCircle"></p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcular la altura de un triangulo isosceles</h2>
+        <form action="">
+            <label for="inputBaseIsosceles">Escribe cuanto mide la base de tu triangulo: </label>
+            <input style="margin-bottom: 10px" id="inputBaseIsosceles" type="number" required>
+            <br>
+            <label for="inputFirstSideIsosceles">Escribe cuanto mide un lado de tu triangulo: </label>
+            <input style="margin-bottom: 5px" id="inputFirstSideIsosceles" type="number">
+            <br>
+            <label for="inputSecondSideIsosceles">Escribe cuanto mide el otro lado de tu triangulo: </label>
+            <input style="margin-bottom: 5px" id="inputSecondSideIsosceles" type="number">
+            <p style="color: rgb(212, 85, 85);" id="warningIsosceles"></p>
+            <button type="button" onclick="calculateHeightIsosceles()">Calcular la altura</button>
+            <p style="color: blue;" id="answerHeightIsosceles"></p>
+        </form>
+    </section>
+
+    <script src="figuras.js"></script>
+</body>
+</html>
